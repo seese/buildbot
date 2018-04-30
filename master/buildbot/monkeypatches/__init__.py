@@ -56,7 +56,7 @@ def patch_testcase_timeout():
     import unittest
     import os
     # any test that should take more than 5 second should be annotated so.
-    unittest.TestCase.timeout = 5
+    unittest.TestCase.timeout = 20
 
     # but we know that the DB tests are very slow, so we increase a bit that value for
     # real database tests
